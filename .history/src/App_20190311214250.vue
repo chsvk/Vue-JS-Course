@@ -8,7 +8,7 @@
     <input type="number" placeholder="Enter Principle" v-model="principle">
     <input type="number" placeholder="Enter Interest" v-model="interest">
     <input type="number" placeholder="Enter Rate" v-model="rate">
-    <h3>{{returnSimpleInterest}}</h3> 
+    <h3>{{returnSimpleInterest}}</h3>
   </div>
 </template>
 
