@@ -1,9 +1,7 @@
 <template>
   <div id="app">
     <h1>Two-Way Data Binding</h1>
-    <h3>Using V-Bind</h3>
-    <input type="text" placeholder="Enter V-Bind name" v-bind:value="name"><br>
-    <h3>Using V-Model</h3>
+    <input type="text" placeholder="Enter V-Bind name" v-bind:value="name">
     <input type="text" placeholder="Enter V-Model Name" v-model="name">
   </div>
 </template>
