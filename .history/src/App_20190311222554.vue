@@ -4,7 +4,6 @@
     <h3>Methods: {{returnName()}}</h3>
     <h3>Computed: {{sumOfTwo}}</h3>
     <input type="text" placeholder="Enter Name" v-model="name">
-    <input type="text" placeholder="Enter Number" v-model="A">
   </div>
 </template>
 

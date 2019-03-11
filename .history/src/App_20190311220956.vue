@@ -1,10 +1,8 @@
 <template>
   <div id="app">
-    <h1>Methods Vs Computed Properties</h1>
-    <h3>Methods: {{returnName()}}</h3>
-    <h3>Computed: {{sumOfTwo}}</h3>
-    <input type="text" placeholder="Enter Name" v-model="name">
-    <input type="text" placeholder="Enter Number" v-model="A">
+    <h1>Computed Properties vs Methods</h1>
+    <p>Methods: {{fullName()}}</p>
+    <p>Computed: {{returnSum}}</p>
   </div>
 </template>
 
@@ -15,24 +13,22 @@ export default {
   name: 'app',
   data(){
     return{
-      name: 'Vamshi Krishna',
-      A: 0,
-      B: 0
+      numberA: 0,
+      numberB: 0,
     }
   },
   methods: {
-    returnName(){
-      console.log('Method has run')
-      return this.name
+    fullName(){
+      console.log("Vamshi Krishna")
+      return "Vamshi Krishna"
     }
   },
   computed: {
-    sumOfTwo(){
-      console.log('Computed Has Run')
-      return this.A + this.B;
+    returnSum(){
+      console.log(this.numberA + this.numberB)
+      return this.numberA + this.numberB
     }
   }
- 
 }
 </script>
 
