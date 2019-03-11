@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <button v-on:dblclick="counter++">Click Me</button>
+    <button v-on:click="clicked()">Click Me</button>
     <h1>{{counter}}</h1>
   </div>
 </template>
