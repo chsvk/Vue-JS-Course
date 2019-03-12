@@ -1,6 +1,7 @@
 <template>
     <div class="data">
-        
+        <h1>Data Component</h1>
+        <h3>{{message}}</h3>
     </div>
 </template>
 

@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <h1>{{message}}</h1>
-    <Login @onSubmit="formSubmitted()" />
+    <Login />
   </div>
 </template>
 
@@ -18,11 +18,6 @@ export default {
       message: '😭Form Has not been Submitted'
     }
   },
-  methods: {
-    formSubmitted(){
-      this.message = "😁Form Submitted"
-    }
-  }
   
   
 }

@@ -1,28 +1,22 @@
 <template>
   <div id="app">
-    <h1>{{message}}</h1>
-    <Login @onSubmit="formSubmitted()" />
+    <Data :message="message" :age="10" />
   </div>
 </template>
 
 
 <script>
-import Login from '@/components/Login'
+import Data from '@/components/Data'
 export default {
   name: 'app',
   components:{
-    Login,
+    Data
   },
   data(){
     return{
-      message: '😭Form Has not been Submitted'
+      message: 'Hello from Data Component'
     }
   },
-  methods: {
-    formSubmitted(){
-      this.message = "😁Form Submitted"
-    }
-  }
   
   
 }

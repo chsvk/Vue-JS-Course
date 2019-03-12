@@ -1,28 +1,19 @@
 <template>
   <div id="app">
-    <h1>{{message}}</h1>
-    <Login @onSubmit="formSubmitted()" />
+    <input type="text" placeholder="Enter The Number" v-model.number="number">
   </div>
 </template>
 
-
 <script>
-import Login from '@/components/Login'
 export default {
   name: 'app',
   components:{
-    Login,
   },
   data(){
     return{
-      message: '😭Form Has not been Submitted'
+      number: ""
     }
   },
-  methods: {
-    formSubmitted(){
-      this.message = "😁Form Submitted"
-    }
-  }
   
   
 }

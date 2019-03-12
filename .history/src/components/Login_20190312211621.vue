@@ -11,7 +11,7 @@
 export default {
     methods: {
         submitForm(){
-            this.$emit('onSubmit')
+            console.log('Form Has Been Submittted')
         }
     }
 }
