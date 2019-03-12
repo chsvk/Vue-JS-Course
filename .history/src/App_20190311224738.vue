@@ -8,8 +8,6 @@
     <button type="submit"></button>
    </form>
    <button @click.once="buttonIsClicked()">Click Me</button>
-
-   <input type="text" @keypress="keyIsDown()">
   </div>
 </template>
 
@@ -35,9 +33,6 @@ export default {
     },
     buttonIsClicked(){
       console.log('Button Clicked')
-    },
-    keyIsDown(){
-      console.log("Key Is Pressed")
     }
   }
  

@@ -2,14 +2,10 @@
   <div id="app">
    <h1>Input Events</h1>
    
-   <form @submit.prevent="submitPressed()" action="">
-     <input type="text" @blur="blur()" placeholder="Enter Name" v-model="name">
-    <input type="text" @focus="focus()">
-    <button type="submit"></button>
+   <form @submit="submitPressed()" action="">
+     <input type="text" @blur="blur()" placeholder="Enter Name">
+    <input type="submit" @focus="focus()">
    </form>
-   <button @click.once="buttonIsClicked()">Click Me</button>
-
-   <input type="text" @keypress="keyIsDown()">
   </div>
 </template>
 
@@ -31,13 +27,7 @@ export default {
       alert('You Have focuessed')
     },
     submitPressed(){
-      console.log(this.name)
-    },
-    buttonIsClicked(){
-      console.log('Button Clicked')
-    },
-    keyIsDown(){
-      console.log("Key Is Pressed")
+      alert('Submit Pressed')
     }
   }
  

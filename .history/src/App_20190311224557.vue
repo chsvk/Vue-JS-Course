@@ -2,14 +2,12 @@
   <div id="app">
    <h1>Input Events</h1>
    
-   <form @submit.prevent="submitPressed()" action="">
+   <form @submit="submitPressed()" action="">
      <input type="text" @blur="blur()" placeholder="Enter Name" v-model="name">
     <input type="text" @focus="focus()">
     <button type="submit"></button>
    </form>
-   <button @click.once="buttonIsClicked()">Click Me</button>
-
-   <input type="text" @keypress="keyIsDown()">
+   <form @submit.once="submitPressedOnce()" action=""></form>
   </div>
 </template>
 
@@ -33,11 +31,8 @@ export default {
     submitPressed(){
       console.log(this.name)
     },
-    buttonIsClicked(){
-      console.log('Button Clicked')
-    },
-    keyIsDown(){
-      console.log("Key Is Pressed")
+    submitPressedOnce(){
+      console.log('The second form has been pressed')
     }
   }
  

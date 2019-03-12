@@ -9,7 +9,7 @@
    </form>
    <button @click.once="buttonIsClicked()">Click Me</button>
 
-   <input type="text" @keypress="keyIsDown()">
+   <input type="text" @keydown="keyIsDown()">
   </div>
 </template>
 
@@ -37,7 +37,7 @@ export default {
       console.log('Button Clicked')
     },
     keyIsDown(){
-      console.log("Key Is Pressed")
+      console.log("Key Is Down")
     }
   }
  
