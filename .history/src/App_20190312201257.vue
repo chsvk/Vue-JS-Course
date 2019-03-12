@@ -1,12 +1,14 @@
 <template>
   <div id="app">
     <Login v-if="value > 4"/>
+    <Header v-else-if="value > 4 && value < 20" />
     <Register v-else/>
     <button @click="switchForms()">Switch Forms</button>
   </div>
 </template>
 
 <script>
+import Header from '@/components/Header'
 import Login from '@/components/Login'
 import Register from '@/components/Register'
 export default {
@@ -14,6 +16,7 @@ export default {
   components:{
     Login,
     Register,
+    Header
   },
   data(){
     return{

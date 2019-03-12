@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <Login v-if="value > 4"/>
+    <Login v-if="value > 5"/>
     <Register v-else/>
     <button @click="switchForms()">Switch Forms</button>
   </div>

@@ -1,8 +1,7 @@
 <template>
   <div id="app">
-    <Login v-if="value > 4"/>
-    <Register v-else/>
-    <button @click="switchForms()">Switch Forms</button>
+    <Login/>
+    <Register/>
   </div>
 </template>
 
@@ -13,18 +12,7 @@ export default {
   name: 'app',
   components:{
     Login,
-    Register,
-  },
-  data(){
-    return{
-      showLogin: true,
-      value: 10
-    }
-  },
-  methods: {
-    switchForms(){
-
-    }
+    Register
   }
 }
 </script>
