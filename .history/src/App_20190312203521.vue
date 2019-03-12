@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <input type="text" placeholder="Enter The Number" v-model.number="number">
-    <Dummy :digit="++index" v-for="(component, index) in number" :key="index"/>
+    <Dummy v-for="component in number"/>
   </div>
 </template>
 

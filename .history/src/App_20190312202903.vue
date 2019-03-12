@@ -1,23 +1,22 @@
 <template>
   <div id="app">
-    <input type="text" placeholder="Enter The Number" v-model.number="number">
-    <Dummy :digit="++index" v-for="(component, index) in number" :key="index"/>
+    
   </div>
 </template>
 
 <script>
-import Dummy from '@/components/Dummy'
+import Login from '@/components/Login'
+import Register from '@/components/Register'
 export default {
   name: 'app',
   components:{
-    Dummy
+    
   },
   data(){
     return{
-      number: ""
+     
     }
   },
-  
   
 }
 </script>
