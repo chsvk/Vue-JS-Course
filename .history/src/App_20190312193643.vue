@@ -1,6 +1,7 @@
 <template>
   <div id="app">
-    <Header/>
+    <h1>Header</h1>
+    <header/>
   </div>
 </template>
 

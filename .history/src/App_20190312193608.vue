@@ -1,15 +1,22 @@
 <template>
   <div id="app">
+    <h1>Header</h1>
     <Header/>
+    <footer-component/>
+    <mewComponent/>
   </div>
 </template>
 
 <script>
-import Header from '@/components/Header'
+import Footer from '@/components/Footer'
+import Header from './components/Header'
+import mewComponent from '@/components/newComponent'
 export default {
   name: 'app',
   components:{
     Header,
+    Footer,
+    mewComponent
   }
 }
 </script>
