@@ -1,8 +1,8 @@
 <template>
   <div id="app">
    <form action="">
-     <input type="text" placeholder="Enter Username" v-model="username"> <p>{{usernameMessage}}</p>
-     <input type="text" placeholder="Enter Password" v-model="password"> <p>{{passwordMessage}}</p>
+     <input type="text" placeholder="Enter Username"> <p>{{usernameMessage}}</p>
+     <input type="text" placeholder="Enter Password"> <p>{{passwordMessage}}</p>
    </form>
   </div>
 </template>
@@ -16,20 +16,10 @@ export default {
     return{
       usernameMessage: '10 Characters left',
       passwordMessage: '8 Characters left',
-      username: '',
-      password:''
     }
   },
   methods: {
     
-  },
-  watch: {
-    username(){
-      if(this.username.length>10){
-        alert('Name Cannot be greater than 10')
-      }
-      this.usernameMessage = 10 - (this.username.length) + " Characters Left"
-    }
   }
   
 }

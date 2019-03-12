@@ -28,7 +28,6 @@ export default {
       if(this.username.length>10){
         alert('Name Cannot be greater than 10')
       }
-      this.usernameMessage = 10 - (this.username.length) + " Characters Left"
     }
   }
   
