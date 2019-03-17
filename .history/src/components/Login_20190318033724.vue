@@ -9,15 +9,11 @@
 
 <script>
 export default {
-    props: ['digit'],
     methods: {
         submitForm(){
             this.$emit('onSubmit')
         }
     },
-    mounted(){
-        console.log(this.digit)
-    }
 }
 </script>
 

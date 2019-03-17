@@ -9,7 +9,9 @@
 
 <script>
 export default {
-    props: ['digit'],
+    props: {
+        digit
+    },
     methods: {
         submitForm(){
             this.$emit('onSubmit')
