@@ -1,9 +1,8 @@
 <template>
   <div id="app">
-    <!-- <h1>This is the App Component</h1>
-    <input type="text" placeholder="Enter Name" v-model="name"> -->
-    <Login v-if="showLogin"/>
-    <button @click="showLogin = !showLogin">Destroy Login Component</button>
+    <h1>This is the App Component</h1>
+    <input type="text" placeholder="Enter Name" v-model="name">
+    <Login/>
   </div>
 </template>
 
@@ -17,7 +16,7 @@ export default {
   },
   data(){
     return{
-      showLogin: true
+      name: ''
     }
   },
   methods: {
