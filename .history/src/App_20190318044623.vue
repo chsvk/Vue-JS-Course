@@ -2,7 +2,7 @@
   <div id="app">
     <h1>This is from App Component</h1>
     <h3>
-    <router-link to="login">Login</router-link> <br>
+    <router-link :to="{name: 'Login'}">Login</router-link> <br>
     <router-link to="register">Register</router-link></h3>
     <router-view/>
   </div>
@@ -18,7 +18,7 @@ export default {
   },
   data(){
     return{
-      messageToLogin: 'The password is 12345'
+      showLogin: true
     }
   },
   methods: {
