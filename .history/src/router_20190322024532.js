@@ -1,6 +1,7 @@
 import VueRouter from "vue-router";
 import People from '@/components/People'
-import PersonProfile from '@/components/PersonProfile'
+import Person from '@/components/Person'
+
 
 export default new VueRouter({
     mode: 'history',
@@ -11,9 +12,7 @@ export default new VueRouter({
        },
        {
            path: '/person',
-           name: 'Person',
-           component: PersonProfile,
-           props: true
-       },
+           component: Person
+       }
     ]
 })

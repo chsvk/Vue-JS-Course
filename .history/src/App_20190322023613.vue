@@ -1,5 +1,9 @@
 <template>
   <div id="app">
+    <h1>This is from App Component</h1>
+    <h3>
+    <router-link to="login">Login</router-link> <br>
+    <router-link to="register">Register</router-link></h3>
     <router-view/>
   </div>
 </template>
@@ -7,6 +11,7 @@
 
 <script>
 import Login from '@/components/Login'
+import Data from '@/Data.json'
 export default {
   name: 'app',
   components:{
@@ -20,7 +25,6 @@ export default {
   methods: {
     
   },  
-
 }
 </script>
 

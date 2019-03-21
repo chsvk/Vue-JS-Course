@@ -12,8 +12,7 @@ export default new VueRouter({
        {
            path: '/person',
            name: 'Person',
-           component: PersonProfile,
-           props: true
+           component: PersonProfile
        },
     ]
 })
