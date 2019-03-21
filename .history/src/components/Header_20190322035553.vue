@@ -9,9 +9,9 @@
 import DateMixin from '@/Mixins/DateMixin'
 export default {
    mixins: [DateMixin],
-   computed: {
+   computed:{
        getDate(){
-           return "Get Date"
+           return "date"
        }
    }
 }

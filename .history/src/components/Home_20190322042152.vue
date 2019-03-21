@@ -19,14 +19,11 @@ export default {
     },
     methods: {
         returnFullName(){
-            console.log("Method Property has been called!!")
             return this.firstName + " " + this.lastName
-            
         },
    },
    computed: {
        returnPersonAge(){
-            console.log("Computed Property has been Called")
            return this.age + " --This is My age"
        }
    }
