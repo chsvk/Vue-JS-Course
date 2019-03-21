@@ -25,12 +25,9 @@ export default {
     computed: {
         person(){
             return Data[this.index]
-        },
-        friendsCount(){
-            return this.person.friends.length
         }
     },
-    created(){var vm = this;
+    mounted(){var vm = this;
         Data.forEach(element => {
             if(Object.values(element).indexOf(this.personID) == 0){
                 vm.index = Object.values(element).indexOf(this.personID)
